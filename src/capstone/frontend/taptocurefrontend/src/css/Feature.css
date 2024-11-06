@@ -1,0 +1,57 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+#features {
+  /* background: url('../assests/hero5.jpeg') no-repeat center center; */
+  background-color: #f3fdff;
+  background-size: cover;
+  padding: 50px 0;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: 'Montserrat', sans-serif;
+}
+
+#features h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: #0f0f07; /* White for the heading */
+}
+
+.a-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  max-width: 300px;
+  text-align: center;
+}
+
+.feature-box:hover {
+  transform: scale(1.05);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.feature-box img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.feature-box h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffcc00; /* Light yellow for the titles */
+}
+
+.feature-box p {
+  font-size: 1rem;
+  color: #ffffff; /* White for the text */
+}

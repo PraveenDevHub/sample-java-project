@@ -1,0 +1,206 @@
+/* General layout */
+.patients-display-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    margin-top: 60px;
+}
+
+.patients-display-sidebar {
+    width: 220px;
+    background-color: #2b59c3;
+    padding: 20px;
+    color: white;
+}
+
+.patients-display-sidebar-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.patients-display-sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.patients-display-sidebar-menu-item {
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: #3c70d9;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.patients-display-sidebar-menu-item:hover {
+    background-color: #2b59c3;
+}
+
+/* Content area */
+.patients-display-content {
+    flex: 1;
+    padding: 30px;
+}
+
+/* Center the heading */
+.patients-display-title {
+    text-align: center;
+    color: #2b59c3;
+    margin-bottom: 20px;
+}
+
+/* Search bar styles */
+.patients-display-filter-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.patients-display-search-bar {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    margin-left: 10px;
+}
+
+/* Table container for horizontal scrolling */
+.patients-display-table-container {
+    overflow-x: auto; /* Allows horizontal scrolling on small screens */
+}
+
+.patients-display-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.patients-display-table-header,
+.patients-display-table-cell {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.patients-display-table-header {
+    background-color: #2b59c3;
+    color: white;
+    font-weight: bold;
+}
+
+.patients-display-table-row:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.patients-display-table-row:hover {
+    background-color: #eaeaea;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .patients-display-sidebar {
+        width: 200px;
+    }
+
+    .patients-display-filter-container {
+        justify-content: center;
+    }
+
+    .patients-display-search-bar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .patients-display-container {
+        flex-direction: column;
+    }
+
+    .patients-display-sidebar {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .patients-display-content {
+        padding: 20px;
+    }
+
+    .patients-display-filter-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .patients-display-search-bar {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .patients-display-table-header, 
+    .patients-display-table-cell {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .patients-display-sidebar {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .patients-display-sidebar-title {
+        font-size: 18px;
+    }
+
+    .patients-display-sidebar-menu-item {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .patients-display-content {
+        padding: 15px;
+    }
+
+    .patients-display-title {
+        font-size: 18px;
+    }
+
+    .patients-display-table-header, 
+    .patients-display-table-cell {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+.patients-display-pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.patients-display-pagination li {
+    margin: 0 5px;
+}
+
+.patients-display-pagination li a {
+    cursor: pointer;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.patients-display-pagination li a:hover {
+    background-color: #ddd;
+}
+
+.patients-display-pagination li.patients-display-active a {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}

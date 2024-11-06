@@ -1,0 +1,75 @@
+.myschedule-body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../assests/molecules1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    width: 100%;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.myschedule-container {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 90px;
+}
+
+.myschedule-filter {
+    margin-bottom: 20px;
+}
+
+.myschedule-filter input[type="date"] {
+    font-size: 16px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.myschedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.myschedule-container h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+
+.myschedule-table th, .myschedule-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.myschedule-table th {
+    background-color: #836ff5;
+    color: white;
+}
+
+.myschedule-date-row td {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+.myschedule-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.myschedule-table tr:hover {
+    background-color: #ddd;
+}

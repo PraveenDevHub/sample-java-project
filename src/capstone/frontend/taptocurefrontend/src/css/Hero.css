@@ -1,0 +1,114 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+.hero-section {
+  background: url('../assests/hero3.jpeg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  padding: 0 1rem;
+  /* Add padding for smaller screens */
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  transition: background 0.3s ease-in-out;
+  max-width: 80%;
+  text-align: center;
+}
+
+.hero-content:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+  /* White for main heading */
+}
+
+.hero-content h1 span {
+  display: block;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #00bfff;
+  /* Light blue for emphasis */
+}
+
+.btn-primary {
+  background-color: #ffcc00;
+  border-color: #ffcc00;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  border-radius: 50px;
+}
+
+.btn-primary:hover {
+  background-color: #e6b800;
+  border-color: #e6b800;
+  transform: scale(1.05);
+}
+
+.btn-primary i {
+  margin-left: 0.5rem;
+}
+
+/* Gradient overlay for smooth transition */
+.hero-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(164, 235, 245, 0.3), rgba(255, 255, 255, 0));
+  z-index: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content h1 span {
+    font-size: 3rem;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    padding: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content h1 span {
+    font-size: 2.5rem;
+  }
+
+  .btn-primary {
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+  }
+}

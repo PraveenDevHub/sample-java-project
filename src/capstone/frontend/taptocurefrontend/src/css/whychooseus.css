@@ -1,0 +1,177 @@
+.why-choose-us-container {
+  padding: 40px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: #f3fdff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.why-choose-us-title {
+  font-size: 2rem;
+  color: #00b7ff;
+  margin-bottom: 20px;
+}
+
+.why-choose-us-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.why-choose-us-item {
+  width: 350px;
+  height: 320px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.why-choose-us-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styling */
+.why-choose-us-icon {
+  font-size: 50px; /* Bigger icon size */
+  color: #1db096;
+  margin-bottom: 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Icon Hover Animation */
+.why-choose-us-item:hover .why-choose-us-icon {
+  color: #0a6c5a;
+  transform: scale(1.1);
+}
+
+/* Heading and Paragraph Styling */
+.why-choose-us-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.why-choose-us-item p {
+  font-size: 1rem;
+  color: #666;
+  padding: 10px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Animation: Bounce on Hover */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.why-choose-us-item:hover .why-choose-us-icon {
+  animation: bounce 1s ease;
+}
+
+/* Responsive Adjustments */
+
+/* For larger screens (max-width: 1190px) */
+@media (max-width: 1190px) {
+  .why-choose-us-container {
+    padding: 40px 20px;
+  }
+
+  .why-choose-us-title {
+    font-size: 2.5rem;
+  }
+
+  .why-choose-us-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .why-choose-us-item {
+    flex-grow: 1;
+    margin: 20px;
+    padding: 20px;
+    max-width: 350px;
+  }
+}
+
+/* For medium screens like tablets (max-width: 970px) */
+@media (max-width: 970px) {
+  .why-choose-us-container {
+    padding: 30px 10px;
+  }
+
+  .why-choose-us-title {
+    font-size: 2rem;
+  }
+
+  .why-choose-us-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .why-choose-us-item {
+    width: 90%;
+    margin: 15px 0;
+  }
+}
+
+/* For smaller mobile screens (max-width: 600px) */
+@media (max-width: 600px) {
+  .why-choose-us-container {
+    padding: 20px 5px;
+  }
+
+  .why-choose-us-title {
+    font-size: 1.75rem;
+  }
+
+  .why-choose-us-item {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .why-choose-us-item p {
+    font-size: 0.9rem;
+  }
+}
+
+/* For very small screens (max-width: 400px) */
+@media (max-width: 400px) {
+  .why-choose-us-container {
+    padding: 15px 5px;
+  }
+
+  .why-choose-us-title {
+    font-size: 1.5rem;
+  }
+
+  .why-choose-us-item {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .why-choose-us-item p {
+    font-size: 0.85rem;
+  }
+}

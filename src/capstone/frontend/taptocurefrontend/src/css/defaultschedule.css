@@ -1,0 +1,137 @@
+.defaultschedule-container {
+  background-image: url('../assests/molecules1.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.defaultschedule-container .container {
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: auto;
+}
+
+.defaultschedule-container h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.defaultschedule-container h5 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.defaultschedule-container .form-label {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.defaultschedule-container .form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: border-color 0.3s ease;
+  text-align: center;
+}
+
+.defaultschedule-container .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.defaultschedule-container .btn-primary {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: #007bff;
+  border: none;
+}
+
+.defaultschedule-container .btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.defaultschedule-container .btn-danger {
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  background-color: #dc3545;
+  border: none;
+}
+
+.defaultschedule-container .btn-danger:hover {
+  background-color: #c82333;
+}
+
+     .defaultschedule-container .card {
+       background-color: #f7fefe;
+       border-radius: 10px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       border: none;
+       max-width: 600px;
+       margin: auto;
+       min-height: 210px;
+       /* Increase the height */
+     }
+  
+     .defaultschedule-container .card-body {
+       padding: 20px;
+       position: relative;
+       /* Ensure the trash icon is positioned relative to the card body */
+     }
+  
+     .defaultschedule-container .remove-time-block-btn {
+       position: absolute;
+       bottom: 10px;
+       right: 10px;
+       background-color: #dc3545;
+       border: none;
+       border-radius: 50%;
+       width: 40px;
+       height: 40px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-size: 1.5rem;
+     }
+  
+     .defaultschedule-container .icon-buttons {
+       display: flex;
+       justify-content: space-between;
+       margin-top: 20px;
+     }
+  
+     .defaultschedule-container .add-time-block-btn {
+       background-color: #28a745;
+       border: none;
+       border-radius: 50%;
+       width: 50px;
+       height: 50px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+     }
+  
+     .defaultschedule-container .save-btn {
+       background-color: #007bff;
+       border: none;
+       border-radius: 50%;
+       width: 50px;
+       height: 50px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+     }

@@ -1,0 +1,239 @@
+/* AppointmentHistory container styling with background image */
+.appointment-history-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('/src/assests/landing1.jpeg'); /* Add your image path here */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    background-repeat: no-repeat;
+}
+
+/* Overlay effect for better readability of content over background */
+.appointment-history-div {
+    flex: 1;
+    padding: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    /* border-radius: 10px;
+    backdrop-filter: blur(5px);  */
+    /* Optional: Blurs background slightly for better readability  */
+}
+
+.appointment-history-div h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background-color: white;
+    padding: 8px 20px; /* Adds space around the text */
+    border-radius: 8px; /* Smooth, rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+
+/* Styling adjustments for the table */
+.appointment-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-history-table th,
+.appointment-history-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.appointment-history-table thead {
+    background-color: #2b59c3;
+    color: white;
+}
+
+/* Responsive design remains the same */
+@media (max-width: 768px) {
+    .appointment-history-div {
+        padding: 1rem;
+        margin-top: 5rem;
+    }
+
+    .appointment-history-table th,
+    .appointment-history-table td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .appointment-history-div h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .appointment-history-table thead {
+        display: none;
+    }
+
+    .appointment-history-table,
+    .appointment-history-table tbody,
+    .appointment-history-table tr,
+    .appointment-history-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .appointment-history-table tr {
+        margin-bottom: 1rem;
+    }
+
+    .appointment-history-table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .appointment-history-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    .appointment-history-div h3 {
+        font-size: 1.3rem;
+    }
+}
+
+.doctor-appointment-history-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.doctor-appointment-history-div {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.doctor-appointment-history-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.doctor-appointment-history-date-filter, .doctor-appointment-history-search-bar, .doctor-appointment-history-display-all {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;/* Reduced height */
+    margin-right: 10px;
+}
+
+.doctor-appointment-history-search-bar {
+    flex-grow: 1;
+    margin-left: 110vb;
+}
+
+.doctor-appointment-history-display-all {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    width: auto; /* Adjust size to fit text */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.doctor-appointment-history-display-all:hover {
+    background-color: #0056b3;
+}
+
+.doctor-appointment-history-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.doctor-appointment-history-table th, .doctor-appointment-history-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+
+
+@media (max-width: 768px) {
+    .doctor-appointment-history-filters {
+        flex-direction: column;
+    }
+
+    .doctor-appointment-history-date-filter, .doctor-appointment-history-search-bar {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .doctor-appointment-history-table th, .doctor-appointment-history-table td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .doctor-appointment-history-div {
+        padding: 10px;
+    }
+
+    .doctor-appointment-history-table th, .doctor-appointment-history-table td {
+        padding: 6px;
+    }
+}
+.doctor-appointment-history-display-all {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.doctor-appointment-history-display-all:hover {
+    background-color: #0056b3;
+}
+
+.appointment-history-pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.appointment-history-pagination li {
+    margin: 0 5px;
+}
+
+.appointment-history-pagination li a {
+    cursor: pointer;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.appointment-history-pagination li a:hover {
+    background-color: #ddd;
+}
+
+.appointment-history-pagination li.appointment-history-active a {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}
+

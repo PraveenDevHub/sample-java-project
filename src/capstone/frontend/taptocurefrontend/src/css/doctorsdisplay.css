@@ -1,0 +1,209 @@
+/* General layout */
+.doctors-display {
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    margin-top: 60px;
+}
+
+.doctors-display__sidebar {
+    width: 220px;
+    background-color: #2b59c3;
+    padding: 20px;
+    color: white;
+}
+
+.doctors-display__sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.doctors-display__sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.doctors-display__sidebar ul li {
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: #3c70d9;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.doctors-display__sidebar ul li:hover {
+    background-color: #2b59c3;
+}
+
+.doctors-display__sidebar ul li svg {
+    margin-right: 10px;
+}
+
+/* Content area */
+.doctors-display__content {
+    flex: 1;
+    padding: 30px;
+}
+
+/* Center the heading */
+.doctors-display__content h1 {
+    text-align: center;
+    color: #2b59c3;
+    margin-bottom: 20px;
+}
+
+/* Dropdown and filter styles */
+.doctors-display__filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allows elements to wrap in small screens */
+}
+
+.doctors-display__search {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.doctors-display__filter select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #333;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Table styles */
+.doctors-display__table-container {
+    width: 100%;
+    overflow-x: auto; /* Allows table to scroll horizontally */
+    margin-top: 20px;
+    -webkit-overflow-scrolling: touch; /* Enable momentum scrolling on mobile devices */
+}
+
+.doctors-display__table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Ensure the table maintains a minimum width */
+}
+
+.doctors-display__table th,
+.doctors-display__table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.doctors-display__table th {
+    background-color: #2b59c3;
+    color: white;
+    font-weight: bold;
+}
+
+.doctors-display__table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.doctors-display__table tr:hover {
+    background-color: #eaeaea;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .doctors-display__sidebar {
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .doctors-display {
+        flex-direction: column; /* Stack sidebar on top of content */
+    }
+
+    .doctors-display__sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .doctors-display__filter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .doctors-display__search {
+        width: 100%; /* Full width search box */
+    }
+
+    .doctors-display__filter select {
+        width: 100%; /* Full width select box */
+        margin-top: 10px;
+        margin-left: 0; /* Remove left margin on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .doctors-display__table-container {
+        width: 100%;
+        overflow-x: auto; /* Scroll horizontally on mobile */
+    }
+
+    .doctors-display__table {
+        min-width: 500px; /* Ensure the table is scrollable on mobile screens */
+        font-size: 14px; /* Smaller font size for table content */
+    }
+
+    .doctors-display__sidebar h2 {
+        font-size: 20px;
+    }
+
+    .doctors-display__sidebar ul li {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .doctors-display__content h1 {
+        font-size: 18px; /* Smaller heading on mobile */
+    }
+}
+
+.doctors-display-pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.doctors-display-pagination li {
+    margin: 0 5px;
+}
+
+.doctors-display-pagination li a {
+    cursor: pointer;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.doctors-display-pagination li a:hover {
+    background-color: #ddd;
+}
+
+.doctors-display-pagination li.doctors-display-active a {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}
+

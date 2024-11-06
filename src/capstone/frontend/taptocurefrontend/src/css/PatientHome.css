@@ -1,0 +1,262 @@
+/* Background and container styles */
+.page-background {
+  background-image: url('../assests/landing3.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-background::backdrop {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.patienthome-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 30px 15px;
+  position: relative;
+}
+
+.patienthome-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.search-and-filters {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.filter-button {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 18px;
+  padding: 7px 20px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  transition: background 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.filter-button:hover {
+  background: linear-gradient(135deg, #0056b3, #003f7f);
+  transform: scale(1.05);
+}
+
+.no-doctors-found {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Filters popup styles */
+.patienthome-filters-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.patienthome-filters {
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Slight transparency */
+  padding: 20px;
+  border-radius: 12px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  width: 90%;
+  max-width: 500px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  /* Smooth transition */
+}
+
+.patienthome-filters:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.patienthome-filters h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.patienthome-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.patienthome-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.patienthome-button:hover {
+  background: linear-gradient(135deg, #0056b3, #003f7f);
+  transform: scale(1.05);
+}
+
+/* Existing styles */
+.patienthome-results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Doctor card style */
+.patienthome-doctor-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.patienthome-doctor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.patienthome-location {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.patienthome-dropdown {
+  margin-bottom: 20px;
+}
+
+.patienthome-select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.doctor-card-left {
+  flex: 0 0 100px;
+  margin-right: 20px;
+}
+
+.doctor-profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.doctor-card-right {
+  flex: 1;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.book-appointment-button {
+  margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.book-appointment-button:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+.patienthome-search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.patienthome-search-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* For smaller screens, use media queries to adjust layout */
+@media (max-width: 1024px) {
+  .patienthome-doctor-card {
+    flex: 0 1 calc(50% - 40px);
+    /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .patienthome-doctor-card {
+    flex: 0 1 calc(100% - 40px);
+    /* Single column for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .patienthome-doctor-card {
+    flex: 0 1 calc(100% - 20px);
+    /* Adjust padding on smallest screens */
+  }
+}

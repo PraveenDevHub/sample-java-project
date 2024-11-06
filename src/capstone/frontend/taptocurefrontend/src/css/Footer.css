@@ -1,0 +1,183 @@
+/* Footer Styles */
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+  text-align: justify;
+}
+
+.footer-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icons li a {
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons li a:hover {
+  color: #00b7ff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #4e4e4e;
+  padding-top: 20px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media (max-width: 1190px) {
+  footer {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .footer-logo img {
+    width: 150px;
+  }
+
+  .footer-columns {
+    flex-wrap: wrap;
+  }
+
+  .footer-column {
+    flex-grow: 1;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 970px) {
+  footer {
+    padding: 30px 10px;
+  }
+
+  .footer-logo img {
+    width: 120px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    width: 90%;
+    margin: 15px 0;
+  }
+
+  .footer-links ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .footer-social {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    padding: 20px 5px;
+  }
+
+  .footer-logo img {
+    width: 100px;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+
+  .footer-links ul {
+    font-size: 14px;
+  }
+
+  .footer-social {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .footer-content {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  footer {
+    padding: 15px 0;
+  }
+
+  .footer-logo img {
+    width: 80px;
+  }
+
+  .footer-links ul {
+    font-size: 12px;
+  }
+
+  .footer-social {
+    font-size: 12px;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
